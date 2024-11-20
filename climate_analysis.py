@@ -1,5 +1,5 @@
-"""Climate Analysis Toolkit"""
-import sysimport temp_conversion
+import sys
+import temp_conversion
 import signal
 signal.signal(signal.SIGPIPE, signal.SIG_DFL)
 
@@ -25,4 +25,3 @@ for line in climate_data:
             kelvin = temp_conversion.fahr_to_kelvin(fahr)
 
             print(str(celsius)+", "+str(kelvin))
-#TODO d-lamp
